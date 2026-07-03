@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AnonMessage 💌</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>💌 AnonMessage</h1>
+      <p class="subtitle">Get anonymous compliments & roasts from your friends!</p>
+      <div class="form-group">
+        <input type="text" id="nameInput" placeholder="Enter your name..." maxlength="32" />
+        <button onclick="createUser()">Get My Link 🔗</button>
+      </div>
+      <div id="result" class="result hidden">
+        <p>Your shareable link:</p>
+        <div class="link-box">
+          <span id="shareLink"></span>
+          <button class="copy-btn" onclick="copyLink()">Copy 📋</button>
+        </div>
+        <a id="inboxLink" href="#" class="inbox-btn">View My Inbox 📥</a>
+      </div>
+      <div id="error" class="error hidden"></div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
