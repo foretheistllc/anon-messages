@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Send a Message 💌</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>💌 AnonMessage</h1>
+      <p class="subtitle">Send an anonymous message to <strong id="recipientName">...</strong>!</p>
+      <div class="form-group">
+        <select id="messageType">
+          <option value="compliment">💖 Compliment</option>
+          <option value="roast">🔥 Roast</option>
+        </select>
+        <textarea id="messageInput" placeholder="Write your anonymous message here..." maxlength="300" rows="5"></textarea>
+        <span id="charCount" class="char-count">0 / 300</span>
+        <button onclick="sendMessage()">Send Anonymously 🚀</button>
+      </div>
+      <div id="error" class="error hidden"></div>
+    </div>
+  </div>
+  <script src="send.js"></script>
+</body>
+</html>
